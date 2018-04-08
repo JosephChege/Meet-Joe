@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="horizontal|vertical">
+
+    <RelativeLayout
+        android:id="@+id/first_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:fadingEdge="horizontal|vertical">
+
+        <ImageView
+            android:id="@+id/tiny_chege_image_corner"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:background="#000"
+            android:fadingEdge="none|horizontal|vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/me_pic" />
+
+        <TextView
+            android:id="@+id/text_chege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tiny_chege_image_corner"
+            android:autoSizeTextType="uniform"
+            android:fadingEdge="horizontal|vertical"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Joseph Chege"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            tools:verticalScrollbarPosition="defaultPosition" />
+
+        <TextView
+            android:id="@+id/text_box_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/text_email"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tiny_chege_image_corner"
+            android:fadingEdge="horizontal|vertical"
+            android:text="P.O. 00223-33, Neverland"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#FFF" />
+
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tiny_chege_image_corner"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/tiny_chege_image_corner"
+            android:fadingEdge="horizontal|vertical"
+            android:text="jcheg50@gmail.com"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#FFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tiny_chege_image_corner"
+            android:background="#000" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_relative_layout"
+        android:layout_marginTop="2dp"
+        android:animateLayoutChanges="true"
+        android:clickable="true"
+        android:fadeScrollbars="true"
+        android:fadingEdge="horizontal|vertical"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/core_linear_layout"
+                android:layout_alignTop="@id/core_linear_layout"
+                android:layout_centerInParent="true"
+                android:alpha=".12"
+                android:background="#789"
+                android:fadingEdge="horizontal|vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/me_pic" />
+
+            <LinearLayout
+                android:id="@+id/core_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fadingEdge="horizontal|vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Description"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="I am the green-colored alien with yellow polka dots from Mars who turns you, and both your coffee and pizza into Software"
+                    android:textColor="@android:color/black" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="SkillSet"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="Android Developer" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="Java SE" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="Java EE (Servlets and JSP)" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="MySQL Database" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="Linux" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="Windows" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="C language" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="HTML" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="CSS" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="JavaScript" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="Visual Basic" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="Presentation (Ms Powerpoint)" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="Microsoft Office" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Hobbies"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Reading, travelling, experimenting new ideas, meditating, researching, listening to music, learning new things, surfing the Internet, leisure coding"
+                    android:textColor="@android:color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Music (5-best on Chege Charts Co.)"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="'A  Midsummer Night's Dream' - Felix Mendelssohn"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="'Smooth Criminal' - Michael Jackson"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="'Bad' - Michael Jackson"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="'One Foot' - Walk The Moon"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="'Starlight' - Muse"
+                    android:textColor="@android:color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Movies (5-best of all time)"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Snowden"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="The Social Network"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Darkest Hour"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Dunkirk"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/black_panther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Black Panther"
+                    android:textColor="@android:color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#000" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Ok...that's just a little about Me...in a Nutshell"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#000" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:fadingEdge="horizontal|vertical"
+        android:padding="4dp"
+        android:text="Copyright, 2018     iJoe Inc."
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>
